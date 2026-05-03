@@ -2,11 +2,11 @@
 
 const projects = [
   {
-    title: "DSWD PROMIS",
-    description:
-      "A Laravel-based procurement and management system with structured backend logic, views, routing, and workflow handling.",
-    stack: ["Laravel", "PHP", "MySQL", "Blade"],
-    github: "https://github.com/kenneth092003/dswdlaravel",
+    title: "Tracix Bot",
+  description:
+    "An experimental automated assistant created for school research purposes, designed to demonstrate bot logic, structured workflows, and practical automation handling in local environments.",
+  stack: ["Python", "Automation", "Scripting", "Local Bot System"],
+  github: "https://github.com/Daddyk5/tracix_bot",
   },
   {
     title: "LegalEase",
