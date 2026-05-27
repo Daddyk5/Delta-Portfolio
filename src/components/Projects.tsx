@@ -36,6 +36,27 @@ const projects = [
     stack: ["JavaScript"],
     github: "https://github.com/Daddyk5/Project-Dating-Expo",
   },
+  {
+    title: "ProspectIQ",
+    description:
+      "An enterprise AI-powered lead intelligence SaaS platform built for outbound sales teams and SMB campaigns. It helps discover, qualify, manage, and track business leads across Canada.",
+    stack: ["HTML", "AI", "SaaS"],
+    github: "https://github.com/Daddyk5/ProspectIQ",
+  },
+  {
+    title: "CipherChain",
+    description:
+      "A Web3 end-to-end encrypted messaging platform built with React, Firebase, Solidity, and Ethers.js. It combines blockchain verification, MetaMask authentication, and real-time secure communication.",
+    stack: ["JavaScript", "React", "Web3", "Blockchain"],
+    github: "https://github.com/Daddyk5/CipherChain",
+  },
+  {
+    title: "Ping_AI_Pilot",
+    description:
+      "AI-powered network monitoring and ping analytics platform built with Next.js for real-time connectivity insights and diagnostics.",
+    stack: ["TypeScript", "Next.js", "AI"],
+    github: "https://github.com/Daddyk5/Ping_AI_Pilot",
+  },
 ];
 
 export default function Projects() {
