@@ -1,30 +1,30 @@
 "use client";
 
 const technicalSkills = [
-  { name: "HTML / CSS", level: 9 },
-  { name: "JavaScript", level: 8 },
-  { name: "TypeScript", level: 6 },
-  { name: "React.js", level: 7 },
-  { name: "Next.js", level: 7 },
-  { name: "React Components", level: 7 },
-  { name: "React Hooks", level: 7 },
-  { name: "Tailwind CSS", level: 8 },
-  { name: "Laravel / PHP", level: 8 },
-  { name: "Node.js / Express", level: 6 },
-  { name: "Python", level: 7 },
-  { name: "Flask", level: 6 },
-  { name: "Flutter", level: 5 },
-  { name: "Java", level: 7 },
-  { name: "Kotlin", level: 6 },
-  { name: "MySQL / Database Design", level: 8 },
-  { name: "REST API Integration", level: 7 },
-  { name: "Git / GitHub", level: 8 },
-  { name: "Machine Learning Fundamentals", level: 6 },
-  { name: "AI Prompt Engineering", level: 8 },
-  { name: "Cybersecurity Basics", level: 6 },
-  { name: "Research Writing", level: 8 },
-  { name: "Technical Documentation", level: 8 },
-  { name: "UI / UX & Graphic Design", level: 8 },
+  "HTML / CSS",
+  "JavaScript",
+  "TypeScript",
+  "React.js",
+  "Next.js",
+  "React Components",
+  "React Hooks",
+  "Tailwind CSS",
+  "Laravel / PHP",
+  "Node.js / Express",
+  "Python",
+  "Flask",
+  "Flutter",
+  "Java",
+  "Kotlin",
+  "MySQL / Database Design",
+  "REST API Integration",
+  "Git / GitHub",
+  "Machine Learning Fundamentals",
+  "AI Prompt Engineering",
+  "Cybersecurity Basics",
+  "Research Writing",
+  "Technical Documentation",
+  "UI / UX & Graphic Design",
 ];
 
 const toolStack = [
@@ -96,19 +96,27 @@ export default function Skills() {
               Technical Skills
             </h3>
 
-            <div className="space-y-5">
-              {technicalSkills.map((skill) => (
-                <div key={skill.name}>
-                  <div className="mb-2 flex items-center justify-between text-sm">
-                    <span className="text-muted">{skill.name}</span>
-                    <span className="font-mono text-gold">{skill.level}/10</span>
+            <div className="grid grid-cols-2 gap-3">
+              {technicalSkills.map((skill, index) => (
+                <div
+                  key={skill}
+                  className="group relative overflow-hidden rounded-md border border-gold/30 bg-gradient-to-br from-primary/20 via-surface/50 to-black/50 p-4 transition-all duration-300 hover:border-gold hover:shadow-lg hover:shadow-gold/40 hover:from-primary/40 hover:via-surface/80"
+                >
+                  <div className="absolute inset-0">
+                    <div className="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-transparent via-gold to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <div className="absolute inset-0 bg-grid-pattern opacity-5" />
                   </div>
-
-                  <div className="h-3 overflow-hidden rounded-sm bg-border">
-                    <div
-                      className="h-full bg-gradient-to-r from-primary via-gold to-red transition-all duration-700"
-                      style={{ width: `${skill.level * 10}%` }}
-                    />
+                  
+                  <div className="relative">
+                    <div className="inline-block mb-2">
+                      <span className="inline-block w-2 h-2 bg-gold rounded-full animate-pulse mr-2" />
+                      <span className="font-mono text-[10px] uppercase tracking-widest text-gold/70 group-hover:text-gold transition-colors">
+                        ARMED
+                      </span>
+                    </div>
+                    <p className="font-heading text-sm uppercase tracking-[0.08em] text-text group-hover:text-gold transition-colors">
+                      {skill}
+                    </p>
                   </div>
                 </div>
               ))}
