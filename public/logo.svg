@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240" role="img" aria-labelledby="t">
+  <title id="t">Delta Portfolio — Kenneth Gulmatico</title>
+  <defs>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c8a44a"/>
+      <stop offset="1" stop-color="#cc2200"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="58%" r="55%">
+      <stop offset="0" stop-color="#cc2200" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#cc2200" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="240" height="240" rx="36" fill="#0a0a0a"/>
+  <rect x="6" y="6" width="228" height="228" rx="31" fill="none" stroke="#2e3a2e" stroke-width="2"/>
+  <circle cx="120" cy="136" r="96" fill="url(#glow)"/>
+  <!-- corner brackets -->
+  <g fill="none" stroke="#7a8c45" stroke-width="4" stroke-linecap="square">
+    <path d="M28 52V28h24"/><path d="M188 28h24v24"/>
+    <path d="M212 188v24h-24"/><path d="M52 212H28v-24"/>
+  </g>
+  <!-- delta -->
+  <path d="M120 40 L200 186 H40 Z" fill="none" stroke="url(#edge)" stroke-width="10" stroke-linejoin="miter"/>
+  <path d="M120 78 L168 166 H72 Z" fill="#141414" stroke="#7a8c45" stroke-width="3"/>
+  <text x="120" y="158" text-anchor="middle" font-family="Rajdhani, 'Segoe UI', Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="2" fill="#f0ede8">KG</text>
+</svg>
