@@ -21,7 +21,7 @@ type Certificate = {
 
 const certificates: Certificate[] = [
   {
-    file: "compTIaCysa+.pdf",
+    file: "compTIaCysa+.png",
     title: "CompTIA CySA+ (CS0-003): Security Operations",
     issuer: "Pearson",
     platform: "Coursera",
@@ -32,7 +32,7 @@ const certificates: Certificate[] = [
     featured: true,
   },
   {
-    file: "comPsysa-exam.pdf",
+    file: "comPsysa-exam.png",
     title: "CompTIA CySA+ (CS0-003): Certification Exam Prep",
     issuer: "Pearson",
     platform: "Coursera",
@@ -43,7 +43,7 @@ const certificates: Certificate[] = [
     featured: true,
   },
   {
-    file: "soc.pdf",
+    file: "soc.png",
     title: "Security Operations Center (SOC)",
     issuer: "Cisco",
     platform: "Coursera",

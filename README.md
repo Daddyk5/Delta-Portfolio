@@ -47,6 +47,18 @@ I'm a **BS Information Technology graduate from Davao City, Philippines**, shipp
 
 ---
 
+## 🏅 Certifications
+
+| Certification | Issuer | Verify |
+|---|---|---|
+| **CompTIA CySA+ (CS0-003): Security Operations** | Pearson · Coursera | [Verify](https://coursera.org/verify/35GOE6AVC4YQ) |
+| **CompTIA CySA+ (CS0-003): Certification Exam Prep** | Pearson · Coursera | [Verify](https://coursera.org/verify/QLB02EH53O5T) |
+| **Security Operations Center (SOC)** | Cisco · Coursera | [Verify](https://coursera.org/verify/E2C65XN5VGWL) |
+
+Plus 12 AWS certificates (Cloud Practitioner, Generative AI, Machine Learning, Security & Governance, and more) and others in RAG, full-stack development, data science, and agile project management. See them all on the [live site](https://kennethportfolio-opal.vercel.app/#certifications).
+
+---
+
 ## 🚀 Featured Work
 
 | Project | What it does | Stack | Links |
