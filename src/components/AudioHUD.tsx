@@ -19,9 +19,9 @@ export default function AudioHUD() {
   };
 
   return (
-    <div className="fixed bottom-4 right-4 z-[9999] w-56 rounded-md border border-border bg-bg/90 p-3 text-xs font-mono text-muted shadow-[0_0_20px_rgba(204,34,0,0.12)] backdrop-blur-md war-hover">
-      <div className="mb-2 flex items-center justify-between">
-        <span className="tracking-widest">
+    <div className="fixed bottom-4 right-4 z-[9999] w-auto rounded-md border sm:w-56 border-border bg-bg/90 p-3 text-xs font-mono text-muted shadow-[0_0_20px_rgba(204,34,0,0.12)] backdrop-blur-md war-hover">
+      <div className="flex items-center justify-between gap-3 sm:mb-2">
+        <span className="hidden tracking-widest sm:inline">
           {isMuted ? "AUDIO MUTED" : "BLAZEFALL OST"}
         </span>
 
@@ -34,7 +34,7 @@ export default function AudioHUD() {
         </button>
       </div>
 
-      <div className="mb-3 flex h-4 items-end gap-1">
+      <div className="mb-3 hidden h-4 items-end gap-1 sm:flex">
         {[1, 2, 3, 4].map((bar) => (
           <span
             key={bar}
@@ -58,7 +58,7 @@ export default function AudioHUD() {
         step={0.01}
         value={isMuted ? 0 : volume}
         onChange={(e) => handleVolumeChange(parseFloat(e.target.value))}
-        className="w-full accent-primary"
+        className="hidden w-full accent-primary sm:block"
         aria-label="Music volume"
       />
     </div>

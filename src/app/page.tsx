@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import Impact from "@/components/Impact";
+import Services from "@/components/Services";
 import About from "@/components/About";
 import Experience from "@/components/Experience";
 import Certifications from "@/components/Certifications";
@@ -14,10 +15,11 @@ export default function Page() {
       <Hero />
       <Impact />
       <About />
-      <Experience />
-      <Certifications />
-      <Skills />
+      <Services />
       <Projects />
+      <Certifications />
+      <Experience />
+      <Skills />
       <Learning />
       <Contact />
     </main>

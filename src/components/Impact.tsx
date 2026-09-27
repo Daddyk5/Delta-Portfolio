@@ -3,18 +3,23 @@
 const stats = [
   {
     value: "100+",
-    label: "Users Assisted",
-    desc: "Handled technical support concerns during VXI AT&T experience.",
+    label: "Users Supported",
+    desc: "Resolved account, device, and service issues for AT&T customers in a fast-paced support floor.",
   },
   {
-    value: "5+",
-    label: "Projects Built",
-    desc: "Created full-stack, AI-related, academic, and freelance projects.",
+    value: "10+",
+    label: "Projects Shipped",
+    desc: "Including a live client portal for a Davao City gym, a real-time market price app, and AI-powered mobile apps.",
+  },
+  {
+    value: "30+",
+    label: "Certifications",
+    desc: "Cisco SOC, CompTIA CySA+ training, and a full AWS cloud & generative-AI track.",
   },
   {
     value: "4+",
-    label: "Years Experience",
-    desc: "Combined tech support, leadership, operations, and creative work.",
+    label: "Years in Tech",
+    desc: "Combined support, operations, leadership, and freelance design experience.",
   },
 ];
 
@@ -30,7 +35,7 @@ export default function Impact() {
           Proven Results
         </h2>
 
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {stats.map((stat) => (
             <div
               key={stat.label}

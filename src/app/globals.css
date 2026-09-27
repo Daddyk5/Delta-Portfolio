@@ -12,7 +12,7 @@
   --color-bg: #0a0a0a;
   --color-surface: #141414;
   --color-surface2: #1c2a1c;
-  --color-primary: #4a5a2a;
+  --color-primary: #7a8c45;
   --color-red: #cc2200;
   --color-ember: #cc4400;
   --color-gold: #c8a44a;
@@ -20,18 +20,25 @@
   --color-muted: #b0a898;
   --color-border: #2e3a2e;
 
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-body: var(--font-inter), system-ui, sans-serif;
+  --font-heading: var(--font-rajdhani), var(--font-inter), sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, monospace;
 }
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 72px;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background: rgba(204, 34, 0, 0.45);
+  color: #f0ede8;
 }
 
 .nox-bg {
@@ -88,6 +95,26 @@ body {
   81% {
     opacity: 0.6;
   }
+}
+
+@keyframes countTick {
+  0% {
+    transform: scale(1.35);
+    opacity: 0;
+    filter: blur(4px);
+  }
+  30% {
+    opacity: 1;
+    filter: blur(0);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-countTick {
+  animation: countTick 0.45s cubic-bezier(0.2, 0.8, 0.2, 1) both;
 }
 
 .animate-countPulse {
@@ -158,13 +185,15 @@ body {
   );
 }
 
-.section-war-reveal {
-  opacity: 0;
-  transform: translateY(60px) scale(0.98);
-  filter: blur(6px);
-  animation: sectionWarReveal linear both;
-  animation-timeline: view();
-  animation-range: entry 8% cover 32%;
+@supports (animation-timeline: view()) {
+  .section-war-reveal {
+    opacity: 0;
+    transform: translateY(60px) scale(0.98);
+    filter: blur(6px);
+    animation: sectionWarReveal linear both;
+    animation-timeline: view();
+    animation-range: entry 8% cover 32%;
+  }
 }
 
 @keyframes sectionWarReveal {
@@ -255,5 +284,18 @@ body {
     opacity: 1;
     transform: translateY(0) scale(1);
     filter: blur(0);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .section-war-reveal {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    animation: none;
+  }
+
+  .scan-pulse::after,
+  .flicker {
+    animation: none;
   }
 }

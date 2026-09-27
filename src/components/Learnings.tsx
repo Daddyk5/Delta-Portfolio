@@ -1,12 +1,12 @@
 "use client";
 
 const learning = [
+  "CompTIA CySA+ (CS0-003) Exam Readiness",
+  "SIEM, Threat Hunting & Incident Response",
   "Machine Learning with Python",
-  "Cybersecurity Fundamentals",
   "Advanced React and Next.js Patterns",
+  "AWS Generative AI & RAG Systems",
   "Laravel System Architecture",
-  "AI Prompt Engineering",
-  "Technical Documentation and Research Writing",
 ];
 
 export default function Learning() {

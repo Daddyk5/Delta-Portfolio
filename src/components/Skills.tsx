@@ -16,12 +16,20 @@ const technicalSkills = [
   "Flutter",
   "Java",
   "Kotlin",
-  "MySQL / Database Design",
+  "MySQL / PostgreSQL",
+  "Supabase",
+  "Django",
+  "React Native / Expo",
+  "Power BI",
   "REST API Integration",
   "Git / GitHub",
+  "Cloud Computing (AWS)",
+  "Linux Administration",
+  "Network Troubleshooting",
   "Machine Learning Fundamentals",
   "AI Prompt Engineering",
-  "Cybersecurity Basics",
+  "Security Operations (SOC)",
+  "Threat Detection & Triage",
   "Research Writing",
   "Technical Documentation",
   "UI / UX & Graphic Design",
@@ -42,11 +50,21 @@ const toolStack = [
   "Java",
   "Kotlin",
   "MySQL",
+  "PostgreSQL",
+  "Supabase",
+  "Django",
+  "Expo",
+  "Capacitor",
+  "Power BI",
   "Tailwind CSS",
   "GitHub",
   "VS Code",
   "Figma",
   "Canva",
+  "Zendesk",
+  "Salesforce",
+  "Helpshift",
+  "CRM Systems",
 ];
 
 const softSkills = [
@@ -68,6 +86,7 @@ const softSkills = [
   "Critical Thinking",
   "Attention to Detail",
   "Fast Learner",
+  "English · Filipino · Cebuano · Ilonggo",
 ];
 
 export default function Skills() {
@@ -97,7 +116,7 @@ export default function Skills() {
             </h3>
 
             <div className="grid grid-cols-2 gap-3">
-              {technicalSkills.map((skill, index) => (
+              {technicalSkills.map((skill) => (
                 <div
                   key={skill}
                   className="group relative overflow-hidden rounded-md border border-gold/30 bg-gradient-to-br from-primary/20 via-surface/50 to-black/50 p-4 transition-all duration-300 hover:border-gold hover:shadow-lg hover:shadow-gold/40 hover:from-primary/40 hover:via-surface/80"

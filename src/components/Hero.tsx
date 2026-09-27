@@ -13,7 +13,7 @@ const noxBackgrounds = [
 
 export default function Hero() {
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden text-center">
+    <section id="top" className="relative flex min-h-screen items-center justify-center overflow-hidden text-center">
       <div className="absolute inset-0">
         <Image
           src="/images/Nox_Hero.jpg"
@@ -27,7 +27,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(204,34,0,0.16),transparent_42%)]" />
       </div>
 
-      <div className="absolute inset-x-0 bottom-0 z-[1] hidden h-40 grid-cols-5 gap-2 px-4 pb-4 opacity-25 md:grid">
+      <div className="absolute inset-x-0 bottom-0 z-[1] hidden h-40 grid-cols-5 gap-2 px-4 pb-4 opacity-15 md:grid">
         {noxBackgrounds.map((src) => (
           <div
             key={src}
@@ -46,7 +46,7 @@ export default function Hero() {
 
       <div className="absolute inset-0 z-[2] scanlines pointer-events-none" />
 
-      <div className="relative z-10 flex flex-col items-center px-6">
+      <div className="hero-enter relative z-10 flex flex-col items-center px-6 pt-20">
         <p className="mb-3 font-mono text-xs uppercase tracking-[0.3em] text-muted drop-shadow-[0_0_12px_rgba(0,0,0,0.9)]">
           [ Operator Profile ]
         </p>
@@ -68,29 +68,33 @@ export default function Hero() {
           Kenneth Gulmatico
         </h1>
 
-        <p className="mb-2 text-xs font-mono uppercase tracking-[0.25em] text-text">
-          Status: <span className="text-red animate-pulse">OPEN FOR WORK</span>
+        <p className="mb-5 flex items-center gap-2 font-mono text-xs uppercase tracking-[0.25em] text-text">
+          <span className="relative flex h-2 w-2">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-red opacity-75" />
+            <span className="relative inline-flex h-2 w-2 rounded-full bg-red" />
+          </span>
+          Available for freelance &amp; full-time roles
         </p>
 
-        <p className="mb-4 text-sm uppercase tracking-[0.2em] text-muted drop-shadow-[0_0_12px_rgba(0,0,0,0.9)] md:text-base">
-          Tactical Tech Operator
+        <p className="mb-4 max-w-2xl text-lg leading-8 text-text drop-shadow-[0_0_12px_rgba(0,0,0,0.9)] md:text-xl">
+          I build full-stack web &amp; mobile products with{" "}
+          <span className="text-gold">AI built in</span> and{" "}
+          <span className="text-gold">security</span> in mind.
         </p>
 
         <TypeAnimation
           sequence={[
-            "Tech Support Specialist",
-            1800,
-            "Gaming Hub Operator",
-            1800,
-            "Graphic Designer",
-            1800,
-            "IT Student Leader",
-            1800,
             "Full-Stack Developer",
             1800,
-            "Machine Learning Engineering",
+            "AI Integration & Automation",
             1800,
-            "AI Prompt Engineering",
+            "Security Operations (SOC · CySA+)",
+            1800,
+            "AWS Cloud & Generative AI",
+            1800,
+            "Mobile Apps with On-Device ML",
+            1800,
+            "UI & Graphic Design",
             1800,
           ]}
           repeat={Infinity}
@@ -100,18 +104,31 @@ export default function Hero() {
         <div className="mt-8 flex flex-wrap justify-center gap-4">
           <a
             href="#projects"
-            className="border border-primary bg-black/40 px-6 py-3 font-mono text-xs uppercase tracking-[0.2em] text-text transition hover:border-red hover:bg-red/20"
+            className="border border-red bg-red/20 px-6 py-3 font-mono text-xs uppercase tracking-[0.2em] text-text transition hover:bg-red"
           >
-            View Operations
+            View My Work
           </a>
 
           <a
             href="#contact"
             className="border border-border bg-black/40 px-6 py-3 font-mono text-xs uppercase tracking-[0.2em] text-text transition hover:border-primary hover:bg-primary/20"
           >
-            Establish Comms
+            Let&apos;s Work Together
           </a>
         </div>
+
+        <dl className="mt-10 grid grid-cols-3 gap-6 border-t border-border/70 pt-6 font-mono uppercase">
+          {[
+            ["10+", "Shipped Projects"],
+            ["30+", "Certifications"],
+            ["4+", "Years in Tech"],
+          ].map(([value, label]) => (
+            <div key={label} className="flex flex-col-reverse justify-end text-center">
+              <dt className="text-[10px] tracking-[0.2em] text-muted">{label}</dt>
+              <dd className="font-heading text-3xl font-bold text-gold">{value}</dd>
+            </div>
+          ))}
+        </dl>
       </div>
     </section>
   );

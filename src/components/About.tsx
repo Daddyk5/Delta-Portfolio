@@ -29,7 +29,7 @@ export default function About() {
           </div>
 
           <p className="font-mono text-xs uppercase tracking-[0.25em] text-muted">
-            Operator Dossier
+            Full-Stack · AI · Security
           </p>
 
           <h2 className="mt-2 font-heading text-3xl uppercase tracking-[0.12em] text-primary tactical-text-glow">
@@ -37,7 +37,7 @@ export default function About() {
           </h2>
 
           <p className="mt-2 font-mono text-sm uppercase tracking-[0.18em] text-red">
-            ● Active Duty
+            ● Available for Hire
           </p>
 
           <p className="mt-3 font-mono text-xs text-muted">SN-24032026</p>
@@ -49,20 +49,41 @@ export default function About() {
           </p>
 
           <h2 className="font-heading text-4xl uppercase tracking-[0.14em] text-primary tactical-text-glow">
-            Tactical-Tech Creative Operator
+            Builder. Troubleshooter. Defender.
           </h2>
 
           <p className="mt-6 leading-8 text-muted">
-            I am an IT student and creative tech builder with experience in
-            technical support, gaming hub operations, campus representation, and
-            freelance design work.
+            I&apos;m a BS Information Technology graduate (Holy Cross of Davao
+            College, 2026) who turns ideas into working
+            software: web platforms in Next.js and Laravel, Android apps with
+            on-device machine learning, and AI tools that save teams real time.
           </p>
 
           <p className="mt-4 leading-8 text-muted">
-            My portfolio combines technical ability, leadership, and a cinematic
-            Delta Force inspired interface built around my own personal identity
-            and work.
+            I spent a year as a{" "}
+            <span className="text-text">technical support representative</span>{" "}
+            on a high-volume AT&amp;T queue and completed an{" "}
+            <span className="text-text">IT internship at DSWD</span>, which
+            taught me to listen to users, debug under pressure, and communicate
+            clearly. I now pair that with formal training in{" "}
+            <span className="text-text">security operations</span> (Cisco SOC,
+            CompTIA CySA+ track) and{" "}
+            <span className="text-text">AWS cloud &amp; generative AI</span>.
           </p>
+
+          <ul className="mt-6 grid gap-3 font-mono text-xs uppercase tracking-[0.15em] text-text sm:grid-cols-2">
+            {[
+              "Ships end-to-end, UI to database",
+              "Security-first mindset",
+              "Clear, client-friendly communication",
+              "Fast learner, 30+ certifications",
+            ].map((point) => (
+              <li key={point} className="flex items-start gap-2">
+                <span className="mt-1 h-2 w-2 shrink-0 bg-red" />
+                {point}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>
