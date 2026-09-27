@@ -128,6 +128,8 @@ Need a website, a mobile app, or AI in your workflow? I'm open to freelance and 
 [![GitHub](https://img.shields.io/badge/GitHub-Daddyk5-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Daddyk5)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Kenneth_Gulmatico-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kenneth-gulmatico-53036b375/)
 [![Telegram](https://img.shields.io/badge/Telegram-Firekai1-26A5E4?style=flat-square&logo=telegram&logoColor=white)](https://t.me/Firekai1)
+[![Facebook](https://img.shields.io/badge/Facebook-Kdashu88-1877F2?style=flat-square&logo=facebook&logoColor=white)](https://www.facebook.com/Kdashu88)
+[![Phone](https://img.shields.io/badge/Phone-%2B63_905_454_9950-25D366?style=flat-square&logo=phone&logoColor=white)](tel:+639054549950)
 
 **📍 Davao City, Philippines** · Available for remote work
 
