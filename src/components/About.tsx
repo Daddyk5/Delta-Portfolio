@@ -65,7 +65,10 @@ export default function About() {
             on a high-volume AT&amp;T queue and completed an{" "}
             <span className="text-text">IT internship at DSWD</span>, which
             taught me to listen to users, debug under pressure, and communicate
-            clearly. I now pair that with formal training in{" "}
+            clearly. I&apos;m a certified{" "}
+            <span className="text-text">Meta Full-Stack Developer</span>{" "}
+            (React, Python, Django, databases &amp; APIs) and pair that with
+            formal training in{" "}
             <span className="text-text">security operations</span> (Cisco SOC,
             CompTIA CySA+ track) and{" "}
             <span className="text-text">AWS cloud &amp; generative AI</span>.

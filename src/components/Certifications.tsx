@@ -21,6 +21,17 @@ type Certificate = {
 
 const certificates: Certificate[] = [
   {
+    file: "meta-fullstack.png",
+    title: "Meta Full-Stack Developer: Front-End & Back-End",
+    issuer: "Meta",
+    platform: "Coursera",
+    date: "Oct 2026",
+    verifyUrl: "https://coursera.org/verify/specialization/9R4EKO0WURFW",
+    category: "Development",
+    tier: "Gold",
+    featured: true,
+  },
+  {
     file: "compTIaCysa+.png",
     title: "CompTIA CySA+ (CS0-003): Security Operations",
     issuer: "Pearson",
@@ -136,22 +147,22 @@ export default function Certifications() {
 
           <p className="mx-auto mt-4 max-w-3xl text-sm leading-7 text-muted">
             {certificates.length} credentials across security operations, AWS
-            cloud and AI, and software development. Security credentials are
+            cloud and AI, and software development. Featured credentials are
             independently verifiable.
           </p>
         </div>
 
-        {/* Featured: latest security credentials */}
+        {/* Featured: latest verified credentials */}
         <div className="mb-16">
           <div className="mb-6 flex items-center gap-3">
             <ShieldCheck className="h-5 w-5 text-red" />
             <h3 className="font-heading text-xl uppercase tracking-[0.2em] text-text">
-              Security Operations Track
+              Featured Credentials
             </h3>
             <span className="h-px flex-1 bg-gradient-to-r from-red/60 to-transparent" />
           </div>
 
-          <div className="grid gap-5 md:grid-cols-3">
+          <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
             {featured.map((cert) => (
               <article
                 key={cert.title}

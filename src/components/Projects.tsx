@@ -126,6 +126,22 @@ const caseStudies: CaseStudy[] = [
 
 const moreProjects: Project[] = [
   {
+    title: "Little Lemon API",
+    tagline: "Restaurant REST API · Meta Capstone",
+    description:
+      "Menu, cart, and order API with role-based access for managers, delivery crew, and customers, plus token auth, filtering, search, and pagination.",
+    stack: ["Django", "Django REST Framework", "Djoser", "Python"],
+    github: "https://github.com/Daddyk5/Little-Lemon-API",
+  },
+  {
+    title: "BRO Protocol",
+    tagline: "AI Chat Reply Assistant · Mobile + Extension",
+    description:
+      "Writes one reply at a time in a chosen tone, with screenshot OCR on device and a Chrome extension that drafts into Messenger but never sends for you.",
+    stack: ["Flutter", "TypeScript", "Chrome MV3", "Claude AI"],
+    github: "https://github.com/Daddyk5/BRO-Protocol-",
+  },
+  {
     title: "ProspectIQ",
     tagline: "AI Lead-Intelligence SaaS",
     description:
@@ -137,8 +153,8 @@ const moreProjects: Project[] = [
     title: "CipherChain",
     tagline: "Web3 Encrypted Messaging",
     description:
-      "End-to-end encrypted real-time chat with blockchain message verification and MetaMask sign-in.",
-    stack: ["React", "Solidity", "Ethers.js", "Firebase"],
+      "End-to-end encrypted chat using Signal's X3DH and Double Ratchet, with Sign-In with Ethereum. The server only ever sees ciphertext.",
+    stack: ["React", "Node.js", "PostgreSQL", "Solidity"],
     github: "https://github.com/Daddyk5/CipherChain",
   },
   {
@@ -167,10 +183,10 @@ const moreProjects: Project[] = [
   },
   {
     title: "KingxQueen",
-    tagline: "Real-Time Dating Platform",
+    tagline: "Full-Stack Dating App · iOS, Android, Web",
     description:
-      "Live-chat backend with Socket.io and Firestore, hardened with Helmet, rate limiting, and compression.",
-    stack: ["Node.js", "Express", "Socket.io"],
+      "Swipe deck plus People Nearby, with AI icebreakers and scam-message warnings, on one Expo codebase and a real-time API.",
+    stack: ["Expo", "TypeScript", "Express", "Neon Postgres", "Socket.io"],
     github: "https://github.com/Daddyk5/Project-Dating-Expo",
   },
 ];

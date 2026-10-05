@@ -14,7 +14,7 @@ const stats = [
   {
     value: "30+",
     label: "Certifications",
-    desc: "Cisco SOC, CompTIA CySA+ training, and a full AWS cloud & generative-AI track.",
+    desc: "Meta Full-Stack Developer, Cisco SOC, CompTIA CySA+ training, and a full AWS cloud & generative-AI track.",
   },
   {
     value: "4+",

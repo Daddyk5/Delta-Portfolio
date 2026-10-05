@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -50,8 +51,11 @@ export default function Nav() {
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between">
-        <a href="#top" className="font-heading text-xl font-bold tracking-widest text-gold">
-          ◈ KG<span className="text-muted">.dev</span>
+        <a href="#top" className="flex items-center gap-2 font-heading text-xl font-bold tracking-widest text-gold">
+          <Image src="/logo.svg" alt="" width={32} height={32} unoptimized priority className="h-8 w-8" />
+          <span>
+            KG<span className="text-muted">.dev</span>
+          </span>
         </a>
 
         <div className="hidden items-center gap-6 font-mono text-xs uppercase tracking-wider text-muted lg:flex">

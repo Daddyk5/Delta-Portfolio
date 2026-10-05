@@ -27,11 +27,12 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://kennethportfolio-opal.vercel.app"),
   title: "Kenneth Gulmatico — Full-Stack Developer · AI · Security Operations",
   description:
-    "Portfolio of Kenneth Gulmatico, BS Information Technology graduate from Davao City, Philippines: full-stack web and mobile developer building AI-powered products, with experience in technical support and training in AWS cloud, CompTIA CySA+, and Cisco SOC.",
+    "Portfolio of Kenneth Gulmatico, BS Information Technology graduate from Davao City, Philippines: Meta-certified full-stack web and mobile developer building AI-powered products, with experience in technical support and training in AWS cloud, CompTIA CySA+, and Cisco SOC.",
   keywords: [
     "Kenneth Gulmatico",
     "Full-Stack Developer",
     "Next.js",
+    "Meta Full-Stack Developer",
     "AI Engineer",
     "Security Operations",
     "CySA+",
