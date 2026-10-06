@@ -12,10 +12,11 @@ type Entry = {
 const experiences: Entry[] = [
   {
     company: "Department of Social Welfare and Development (DSWD)",
-    role: "IT Intern",
-    date: "2026",
+    role: "IT Intern · Field Office XI",
+    date: "February - May 2026",
     bullets: [
-      "Assisted with IT systems and workflow process support.",
+      "Built a Purchase Request Tracking System for the Pantawid Pamilyang Pilipino Program (4Ps) in the Davao Region.",
+      "Completed 486 hours of supervised on-the-job training, supporting IT systems and workflow processes.",
     ],
   },
   {

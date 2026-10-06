@@ -63,7 +63,8 @@ export default function About() {
             I spent a year as a{" "}
             <span className="text-text">technical support representative</span>{" "}
             on a high-volume AT&amp;T queue and completed an{" "}
-            <span className="text-text">IT internship at DSWD</span>, which
+            <span className="text-text">IT internship at DSWD</span>, where I
+            built a purchase request tracking system for the 4Ps program. Both
             taught me to listen to users, debug under pressure, and communicate
             clearly. I&apos;m a certified{" "}
             <span className="text-text">Meta Full-Stack Developer</span>{" "}
